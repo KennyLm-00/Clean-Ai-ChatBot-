@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KLM's Ai</title>
+  <link rel="stylesheet" href="style.css" onload="this.media='all'">
+</head>
+
+<body>
+  <div id="app">
+    <div id="loading" class="loading">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+    <button class="home"><a href="index.html"><img class = "imghome" src="./assets/home.png" alt="Home"></a></button>
+    <p style = "color: rgb(255, 255, 255); padding: 1rem; text-align: center;">*NOTICE*<br> if you click the planet and go back "home" your chats will not be saved!</p>
+    <br>
+    <!-- <div id="previous_chats" class="hidden"> -->
+      <!-- This is where previous chats will be displayed -->
+    <!-- </div>     -->
+    <div id="chat_container"></div>
+    <form>
+        <textarea name = "prompt" rows = "1" cols="1" placeholder="Ask me..."></textarea>
+        <button type="submit"><img src = "assets/send.svg" /></button>
+    </form>
+  </div>
+  <script type="module" src="script.js"></script>
+  <script type="module" src="loading.js"></script>
+</body>
+
+</html>
